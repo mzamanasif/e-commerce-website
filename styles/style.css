@@ -19,12 +19,6 @@
     display: flex;
 }
 
-.hero-section{
-    justify-content: space-between;
-    max-width: 1180px;
-    margin: 0 auto;
-    
-}
 .primary-btn{
     width: 200px;
     height: 50px;
@@ -62,7 +56,10 @@
 
 /* hero section start */
 .hero-section{
-    margin-top: 100px;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 100px auto;
+    
 }
 .section-title{
     font-size: 3.25rem;
@@ -74,6 +71,22 @@
 }
 
 .hero-section-banner img{
+    max-width: 100%;
+}
+
+/* brand related style */
+.online-best-platform{
+    max-width: 1180px;
+    height: 110px;
+    border: 2px solid seashell;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.online-best-platform img{
     max-width: 100%;
 }
 
@@ -92,4 +105,12 @@
     .section-title{
         font-size: 1.5rem;
     }
+
+    .online-best-platform{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        border: none;
+        padding: 20px;
+    }
+    
 }
