@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-regular-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* shared common style */
+.light-gray{
+    color: #3A3A3A;
+    font-weight: 500;
+}
+.flex-display{
+    display: flex;
+}
+
+.hero-section{
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    
+}
+.primary-btn{
+    width: 200px;
+    height: 50px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 16px;
+}
+
+
+/* navbar related style */
+.navbar {
+  max-width: 1180px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-items {
+  gap: 30px;
+}
+.navbar-items li {
+  list-style: none;
+}
+.navbar-items li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* hero section start */
+.hero-section{
+    margin-top: 100px;
+}
+.section-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.hero-container{
+    max-width: 50%;
+}
+
+.hero-section-banner img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar, .navbar-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-container{
+        max-width: 100%;
+    }
+    .section-title{
+        font-size: 1.5rem;
+    }
+}
